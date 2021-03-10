@@ -11,6 +11,8 @@ from sqlalchemy.orm import scoped_session
 
 from .database import Base, SessionLocal, engine
 
+# needed for multi-worker setup, since working with SQLAlchemy's create_all
+# or table creation functions results in issues with barge
 with engine.connect() as con:
     rs = con.execute(
         """
