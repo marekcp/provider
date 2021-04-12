@@ -61,6 +61,11 @@ ENV CONFIG_FILE=config.ini
 #ENV AQUARIUS_URL='http://127.0.0.1:5000'
 ENV AQUARIUS_URL='https://aquarius.rinkeby.bigdataprotocolmarket.com:5000'
 
+# FIXME set that because version throws exception and polutes the logs, probably need verification if will be used not only with the marketplace
+ENV OPERATOR_SERVICE_URL='https://operator-api.operator.dev-ocean.com'
+
+
+
 ENV PARITY_ADDRESS1=0x00bd138abd70e2f00903268f3db08f2d25677c9e
 ENV PARITY_PASSWORD1=node0
 ENV PARITY_KEYFILE1=tests/resources/consumer_key_file.json
