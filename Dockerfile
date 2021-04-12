@@ -46,8 +46,8 @@ ENV AZURE_SUBSCRIPTION_ID=''
 ENV AZURE_SHARE_INPUT='compute'
 ENV AZURE_SHARE_OUTPUT='output'
 
-#ENV OCEAN_PROVIDER_URL='http://0.0.0.0:8030'
-ENV OCEAN_PROVIDER_URL='https://provider.rinkeby.bigdataprotocolmarket.com:8030'
+ENV OCEAN_PROVIDER_URL='http://0.0.0.0:8030'
+#ENV OCEAN_PROVIDER_URL='https://provider.rinkeby.bigdataprotocolmarket.com:8030'
 
 # docker-entrypoint.sh configuration file variables
 ENV OCEAN_PROVIDER_WORKERS='1'
