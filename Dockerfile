@@ -59,7 +59,7 @@ ENV CONFIG_FILE=config.ini
 
 #ENV AQUARIUS_URL=https://aquarius.marketplace.dev-ocean.com
 #ENV AQUARIUS_URL='http://127.0.0.1:5000'
-ENV AQUARIUS_URL='https://aquarius.rinkeby.bigdataprotocolmarket.com:5000'
+#ENV AQUARIUS_URL='https://aquarius.rinkeby.bigdataprotocolmarket.com:5000'
 
 # FIXME set that because version throws exception and polutes the logs, probably need verification if will be used not only with the marketplace
 ENV OPERATOR_SERVICE_URL='https://operator-api.operator.dev-ocean.com'
