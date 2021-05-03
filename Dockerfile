@@ -23,13 +23,7 @@ RUN python3.8 -m pip install .
 
 # config.ini configuration file variables
 #ENV NETWORK_URL='http://127.0.0.1:8545'
-ENV NETWORK_URL='https://rinkeby.infura.io/v3/5497c41a467d42a4b83e35735f262b37'
 ENV ARTIFACTS_PATH='/ocean-provider/artifacts'
-
-ENV PROVIDER_PRIVATE_KEY='0xc6914ea1e5ac6a1cd2107240be714735bf799ce9ea4125016aeb479266720ff4'
-ENV PROVIDER_ADDRESS='F41681F0BE4A914d447d7A94C91906E74A6561D0'
-ENV PROVIDER_PASSWORD='secret'
-ENV PROVIDER_KEYFILE='tests/resources/provider_key_file.json'
 
 ENV AZURE_ACCOUNT_NAME=''
 ENV AZURE_ACCOUNT_KEY=''
