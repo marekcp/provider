@@ -60,6 +60,11 @@ def get_version():
     return conf["bumpversion"]["current_version"]
 
 
+import re
+
+infura_re = re.compile('/:.*?@')
+censored_network_url = "/".join(re.sub(infura_re, '/', config.network_url).split('/')[:-1])
+
 @app.route("/")
 def version():
     """
@@ -76,7 +81,7 @@ def version():
     info = dict()
     info["software"] = Metadata.TITLE
     info["version"] = get_version()
-    info["network-url"] = config.network_url
+    info["network-url"] = censored_network_url
     info["providerAddress"] = get_provider_address()
     info["computeAddress"] = get_compute_address()
     info["serviceEndpoints"] = get_services_endpoints()
